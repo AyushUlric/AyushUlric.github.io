@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ayush Pratap Singh</title>
+	<!-- <meta http-equiv="refresh" content="3"> -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Sacramento&display=swap');
+
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		body {
+			font-family: "Montserrat",sans-serif;
+		}
+
+		.font-sac {
+			font-family: 'Sacramento', cursive;
+		}
+
+		.font-mon {
+			font-family: 'Montserrat', sans-serif;
+		}
+
+		.container-pr { 
+			margin: 0;
+			background-image: url("./assets/images/bulb.jpg");
+		    background-repeat: no-repeat;
+		    background-position: right;
+		    background-size: contain;
+		    height: 100vh;
+		}
+
+		.container {
+			height: 100%;
+			position: relative;
+			padding-left: 6.7rem;
+		}
+
+		.social-icons {
+			z-index: 1;
+			font-size: 0.85rem;
+			white-space: 0.2rem;
+			position: absolute;
+			top: 6.5%;
+			left: 7.6%;
+		}
+
+		.social-icons a {
+			margin: 0;
+			color:#2a2a2a ;
+		}
+
+		.social-icons a i {
+			margin: 0.2rem;
+		}
+
+		#cloudImg {
+			
+			margin: 0;
+			animation: cloudLoop 60s linear infinite;
+		}
+
+		@keyframes cloudLoop {
+			0% {
+				transform: translate(0);
+			}
+			50% {
+				transform: translateX(-40%);
+			}
+			100% {
+				transform: translateX(0);
+			}
+		}
+
+		.bio{
+			position: absolute;
+			top: 37%;
+		}
+
+		.bio p:first-child {
+			font-size: 4rem;
+		}
+
+		.bio p {
+			color: #323232 ;
+			margin: 0;
+			font-size: 4.2rem;
+			font-weight: bold;
+		}
+
+		.bio p:last-child {
+			margin-top: 1rem;
+			word-spacing: 0.5rem;
+			letter-spacing: 0.4rem;
+			font-size: 1rem;
+			text-transform: uppercase;
+		}
+
+		.chat {
+			z-index: 1;
+			background-color: #158E41;
+			padding: 0.5rem 1rem;
+			border-radius: 2rem;
+			position: fixed;
+			bottom: 1rem;
+			right: 1.5rem;
+		}
+
+		.chat a {
+			color: white;
+			text-decoration: none;
+		}
+
+
+
+	</style>
+</head>
+<body>
+	<div class="chat">
+		<a href="https://wa.me/+919026313063">Contact Me</a> 
+	</div>
+	<div class="container-pr">
+		<div class="container">
+			<div class="social-icons">
+				<a href=""><i class="bi bi-facebook"></i></a>
+				<a href="#"><i class="bi bi-twitter"></i></a>
+				<a href="#"><i class="bi bi-github"></i></a>
+			</div>
+			<img src="./assets/images/cloud.png" id="cloudImg" alt="">
+			<div class="bio">
+				<p class="font-sac">Hello, I am</p>
+				<p class="font-mon">Ayush Pratap Singh</p>
+				<p class="font-mon">A passionate software <span style="color: #f7941d">developer</span></p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
